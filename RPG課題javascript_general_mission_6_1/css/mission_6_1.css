@@ -1,0 +1,224 @@
+.homeScreen {
+  margin: 20px;
+  height: 600px;
+  display: flex;
+  flex-direction: column; /* 要素を縦に並べる */
+  align-items: center; 
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; 
+}
+.titleArea {
+  border: 1px solid;
+  margin: 20px;
+  height: 400px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.start_Box{
+  border: 1px solid;
+  margin: 20px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+}
+.continew{
+  border: 1px solid;
+  margin: 20px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+}
+.screenHome,h2,.nameArea,.select_Area {
+  display: flex;
+  flex-direction: column; /* 要素を縦に並べる */
+  align-items: center; 
+  
+}
+.select_Area {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+  .start_Box a,
+  .continew a {
+    display: block; /* `a` 要素をブロック要素にする */
+    width: 100%; 
+    text-align: center; 
+    padding: 10px 0; 
+  }
+.start_Box a,
+.continew a {
+      display: block; /* `a` 要素をブロック要素にする */
+      width: 100%; 
+      text-align: center; 
+      padding: 10px 0;
+      box-sizing: border-box; 
+      box-sizing: border-box; 
+    }
+
+.screenHome{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  width: auto;
+}
+
+.start_continew_Box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; 
+  width: auto;
+
+  flex-direction: column; /* 要素を縦に並べる */
+  align-items: center; 
+}
+
+/***********select*****************************************************************/
+
+.select_Area{
+  display: flex;
+  flex-direction: row;
+}
+.characterA,.characterB{
+  width: 200px;
+  height: 300px;
+  margin-bottom: 30px; 
+  padding: 20px;
+}
+.charactar_Name{
+  margin-top: 20px;
+  padding: 2px;
+
+}
+.selectedONE{
+  background-color: darkblue;
+}
+
+/**********field**********************************************************/
+
+
+.fieldBackground,.battle-screen{
+  display: flex;
+  width: 810px;
+  height: 610px;
+  margin: 5%;
+  align-items: flex-start; 
+}
+
+.left_Box{
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+}
+
+        .enemyBackground{
+  /*border: 1px solid;*/
+  margin: 10px;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 0; 
+}
+
+        .comandAndMessage{
+  /*border: 1px solid;*/
+  width: 100%;
+  height: 157px;
+  display: flex;
+  margin: 10px;
+  padding-top: 10px;
+}
+.comandBox{
+  margin: 0px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  }
+
+  .messageBox {
+    border: 1px solid;
+    margin: 0px;
+    padding: 5px;
+    width: 80%;
+    height: auto;
+    background-color: rgba(240, 248, 255, 0.5); 
+  }
+
+.right_Box{ 
+  /*border: 1px solid;*/
+  width: 30%;
+  height: 95%;
+  overflow: hidden;
+}
+
+    .status_Box{
+    background-color: rgba(240, 248, 255, 0.5); 
+    width: 80%;
+    height: auto;
+    }
+
+
+  /**十字キー***/
+  .controller {
+    background-color: rgba(240, 248, 255, 0.5); 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; 
+    width: fit-content;
+  }
+  
+  .controller button {
+    width: 50px; /* ボタンのサイズ */
+    height: 50px;
+    border: none;
+    background-color: transparent; 
+    font-size: 24px;
+  }
+  
+  #up { grid-column: 2; grid-row: 1; }
+  #down { grid-column: 2; grid-row: 3; }
+  #left { grid-column: 1; grid-row: 2; }
+  #right { grid-column: 3; grid-row: 2; } 
+  
+  .controller button:active {
+    transform: scale(0.95); /* 少し小さく */
+    background-color: rgba(0, 0, 0, 0.1); /* 薄いグレーの背景 */
+  }
+
+  #comandBox button {
+    font-family: 'RPGFont', sans-serif; /* RPGフォントを適用 */
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #4CAF50; /* 緑色 */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #battle-field-background {
+    align-items: center; 
+  }
+  #battle-field-background {
+    display: flex;
+    width: 810px;
+    height: 610px;
+    margin: 5%;
+    align-items: center;
+  }
+  #statusList li::before {
+    content: ""; /* li要素の::before疑似要素の内容を空にする */
+  }
+

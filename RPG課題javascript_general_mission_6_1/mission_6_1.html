@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/mission_6_1.css">
+  <title>JavaScriptの学習</title>
+</head>
+<body>
+
+  <!-- ホーム画面 -->
+  <div id="homeScreen" class="screenHome">
+    <div class="titleArea">
+      <h1>RPGタイトル</h1>
+    </div>
+    <div class="start_continew_Box">
+      <a href="#" onclick="startGame()" class="start_Box"> スタート </a>
+      <a href="#" onclick="continueGame()" class="continew"> コンティニュー </a>
+    </div>
+  </div>
+
+  <!-- キャラクター選択画面 -->
+  <div id="selectScreen" class="screen">
+    <h2>キャラクターを選択して下さい</h2>
+    <div class="select_Area"> 
+      <div class="characterA">
+        <img class="characterA" src="images/character_kishi_man_01_blue_black.png" alt="キャラクターA">
+      </div>
+      <div class="characterB">
+        <img class="characterB" src="images/character_tozoku_green.png" alt="キャラクターB">
+      </div>
+    </div>
+    <div class="nameArea">
+      <p>名前を入力してください</p>
+      <input id="characterName">
+      <button id="decide">決定</button>
+    </div>
+  </div>  
+
+  <!-- フィールド画面 -->
+  <div id="fieldScreen" class="screen">
+    <div class="fieldBackground" id="fieldBackground">
+      <div class="left_Box">
+        <div class="enemyBackground" id="enemyBackground">
+          <img id="character"> 
+          <img id="enemy-image" src="" alt="Enemy"> 
+          <div class="enemy_pic"></div>
+        </div>
+        <div class="comandAndMessage">
+          <div class="comandBox" id="comandBox"> 
+          </div>
+          <div class="messageBox" id="messageBox"> </div>
+        </div>
+      </div>
+      <div class="right_Box">
+        <div class="status_Box">
+          <ul id="statusList"> </ul> 
+        </div>
+        <div class="controller" id="controller">    
+          <button id="up">▲</button>
+          <button id="down">▼</button>
+          <button id="left">◀</button>
+          <button id="right">▶</button>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <script src="js/mission_6_1.js"></script>
+</body>
+</html>
